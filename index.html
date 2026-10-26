@@ -588,6 +588,57 @@
       line-height: 1.75;
     }
 
+    /* FAQ */
+
+    .faq-section {
+      border-top: 1px solid var(--border);
+      background: var(--bg-soft);
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+      max-width: 850px;
+      margin-inline: auto;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      background: rgba(16, 24, 39, .55);
+      transition: border-color var(--ease), background var(--ease);
+    }
+
+    .faq-item[open],
+    .faq-item:hover {
+      border-color: var(--border-strong);
+    }
+
+    .faq-item summary {
+      padding: 19px 21px;
+      color: var(--text);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .faq-item summary::marker {
+      color: var(--accent);
+    }
+
+    .faq-item summary:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 8px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      padding: 0 21px 20px;
+      color: var(--muted);
+      font-size: .92rem;
+      line-height: 1.8;
+    }
+
     /* Contact */
 
     .contact {
@@ -1108,6 +1159,62 @@
               <p>Develop useful skills and establish a sustainable foundation.</p>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Common questions</div>
+          <h2>Good to <span class="accent">know.</span></h2>
+          <p>A few practical details about the proposed starter website service.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Is the £49 starter website offer final?</summary>
+            <p>
+              £49 is a proposed introductory price, not a confirmed quote for every project.
+              The requirements, scope, final price and availability must be agreed before work begins.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Will my website work on phones?</summary>
+            <p>
+              The proposed starter package includes a responsive layout intended for desktop
+              and mobile screens. The finished website should be checked on the target devices
+              before it is considered complete.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Are hosting and a domain included?</summary>
+            <p>
+              Domains and paid hosting are not included in the proposed package.
+              A simple static website may be hosted using a suitable free service, subject
+              to that service's terms and limitations.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I send an enquiry?</summary>
+            <p>
+              Use the contact form below. It prepares an email in your configured email
+              application; it does not send the message automatically or store the form
+              details on this website.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can you build software or automation too?</summary>
+            <p>
+              Software development, automation and quality testing are areas Sableframe
+              is developing. Availability for work outside the listed website offer is
+              not guaranteed, so ask first before relying on a particular service.
+            </p>
+          </details>
         </div>
       </div>
     </section>
